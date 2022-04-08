@@ -1,0 +1,226 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body {
+    font: 1.6rem Helvetica;
+    height: 100vh;
+    background-color: #fff;
+    margin: 0;
+}
+header {
+    display: flex;
+    background-color: #fff;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+.brand img {
+    height: 4rem;
+    padding-left: 5rem;  
+}
+.header-links {
+    padding-right: 6rem;
+}
+.header-links a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #4a83ff;
+    padding: 0rem 2rem 0rem 2rem;
+}
+.button-div {
+    padding-right: 2rem;
+}
+button {
+    display: none;
+}
+button {
+    font-size: 2rem;
+    width: 4rem;
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+    
+main{
+    display: flex;
+    justify-content: end;
+    background-color: #f8f8f8;
+}
+form {
+    background-color: #fff;
+    padding: 2rem;
+    padding-bottom: 12rem;
+    border: 1px solid #f1f1f1;
+    box-shadow:1px 1px 1px 1px #e0e0e0;
+}
+.main-form {
+    padding-top: 2rem;
+    padding-right: 26rem;
+}
+.mainform-img {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.mainform-img img{
+    height: 4rem;
+}
+.main-form h2 {
+    text-align: center;
+    color: #000;
+    padding-bottom: 2rem;
+}
+.form-confirmed {
+    line-height: 1.3;
+    text-align: center;
+    text-transform: uppercase;
+}
+.loader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader img {
+    width: 4rem;
+    height: 4rem;
+    color: sandybrown;
+}
+#jenneta {
+    width: 30rem;
+    padding: 1.2rem 1.1rem;
+    border: 1px solid rgb(238, 236, 236);
+    border-radius: 5px;
+}
+#jenneta:focus {
+    outline: none;
+    border: 1px solid #0052FF;
+}
+#jennet {
+    width: 30rem;
+    padding: 1.2rem 1.1rem;
+    border: 1px solid rgb(238, 236, 236);
+    border-radius: 5px;
+}
+#jennet:focus {
+    outline: none;
+    border: 1px solid #0052FF;
+}
+.submit-button {
+    text-align: center;
+}
+#submit {
+    border: 0.5px solid rgb(179, 178, 178);
+    padding: 1.4rem;
+    padding-left: 14rem;
+    padding-right: 14rem;
+    background-color: rgba(43, 142, 235, 0.938);
+    color: #fff;
+    cursor:pointer;
+    font-size: 1.6rem;
+    align-items: center;
+}
+#submit:hover {
+    background-color: rgba(8, 8, 175, 0.938);
+}
+.support {
+    text-align: center;
+    padding-top: 2rem;
+    color: #fff;
+}
+.support a {
+    text-decoration: none;
+    color: rgba(43, 142, 235, 0.938);
+    padding-right: 1rem;
+}
+footer {
+    display: flex;
+    justify-content: center;
+}
+footer a {
+    text-decoration: none;
+}
+footer span {
+    padding-top: 1rem;
+    font-size: 0.9rem;
+}
+footer p {
+    font-size: 0.9rem;
+    color:rgba(43, 142, 235, 0.938);
+}
+@media screen and (max-width: 1024px ) {
+    .main-form {
+        padding-right: 1.4rem;  
+    }
+}
+@media screen and (max-width: 760px ) {
+    .main {
+        background-color: #fff;  
+    }
+}
+@media screen and (max-width: 640px ) {
+    .main {
+        justify-content: center; 
+    }
+}
+
+@media screen and (max-width: 480px ) {
+    .header {
+        height: 1rem;
+    }
+    .header-links{
+        display: none;
+    }
+    .brand {
+        display: none;
+    }
+    main {
+        width: 100vw;
+        height: 100vh
+    }
+    form {
+        border: none;
+        box-shadow: none;
+    }
+    .grid-container {
+        grid-template-rows: 1rem 1fr 3rem;
+    }
+}
+
+.success-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#fff
+}
+.check-img {
+    height: 100px;
+    width: 140px
+}
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 7rem 1fr 3rem;
+    height: 100%;
+
+}
+.header {
+    grid-area: header;
+}
+.main {
+    grid-area: main;
+}
+.footer {
+    grid-area: footer;
+}
